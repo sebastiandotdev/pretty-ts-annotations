@@ -38,7 +38,9 @@
     }
   },
   "scripts": {
-    "fmt": "eslint . --fix"
+    "fmt": "eslint . --fix",
+    "lint": "eslint .",
+    "check": "tsc --noEmit"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.8.1",
