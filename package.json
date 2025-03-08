@@ -20,6 +20,12 @@
     "Other"
   ],
   "main": "index.js",
+  "icon": "resources/icon.png",
+  "files": [
+    "LICENSE.md",
+    "dist/*",
+    "resources/*"
+  ],
   "engines": {
     "vscode": "^1.97.0"
   },
