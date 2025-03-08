@@ -1,0 +1,45 @@
+{
+  "publisher": "sebastiandotdev",
+  "name": "pretty-ts-annotations",
+  "displayName": "pretty-ts-annotations",
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.5.2",
+  "description": "An extension to better appreciate TypeScript type inference",
+  "author": "sebastiandotdev",
+  "license": "MIT",
+  "homepage": "https://github.com/sebastiandotdev/pretty-ts-annotations",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebastiandotdev/pretty-ts-annotations.git"
+  },
+  "keywords": [],
+  "categories": [
+    "Programming Languages",
+    "Debuggers",
+    "Visualization",
+    "Other"
+  ],
+  "main": "index.js",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "contributes": {
+    "commands": [],
+    "configuration": {
+      "type": "object",
+      "title": "pretty-ts-annotations",
+      "properties": {}
+    }
+  },
+  "scripts": {
+    "fmt": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.8.1",
+    "@types/node": "^22.13.9",
+    "@types/vscode": "^1.98.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-format": "^1.0.1",
+    "typescript": "^5.8.2"
+  }
+}
