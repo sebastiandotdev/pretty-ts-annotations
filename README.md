@@ -1,7 +1,3 @@
-<p align="center">
-<img src="resources/icon.png" height="150">
-</p>
-
 <h1 align="center">Pretty TypeScript Annotations <sup>VS Code</sup></h1>
 
 <p align="center">A VS Code extension that adds pretty annotations to your TypeScript code.</p>
