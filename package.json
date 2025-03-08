@@ -4,7 +4,7 @@
   "displayName": "pretty-ts-annotations",
   "version": "0.1.0",
   "packageManager": "pnpm@10.5.2",
-  "description": "An extension to better appreciate TypeScript type inference",
+  "description": "A VS Code extension that adds pretty annotations to your TypeScript code.",
   "author": "sebastiandotdev",
   "license": "MIT",
   "homepage": "https://github.com/sebastiandotdev/pretty-ts-annotations",
