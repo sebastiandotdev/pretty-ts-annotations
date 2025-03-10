@@ -3,7 +3,6 @@
   "name": "pretty-ts-annotations",
   "displayName": "pretty-ts-annotations",
   "version": "0.1.0",
-  "packageManager": "pnpm@10.5.2",
   "description": "A VS Code extension that adds pretty annotations to your TypeScript code.",
   "author": "sebastiandotdev",
   "license": "MIT",
@@ -29,6 +28,9 @@
   "engines": {
     "vscode": "^1.97.0"
   },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "contributes": {
     "commands": [],
     "configuration": {
@@ -40,7 +42,7 @@
   "scripts": {
     "vscode:prepublish": "npm run build -- --minify",
     "build": "esbuild --bundle --external:vscode src/extension.ts --outdir=out --platform=node --format=cjs",
-    "watch": "npm run build -- --sourcemap --watch",
+    "dev": "npm run build -- --sourcemap --watch",
     "fmt": "eslint . --fix",
     "lint": "eslint .",
     "check": "tsc --noEmit"
@@ -54,5 +56,11 @@
     "eslint": "^9.22.0",
     "eslint-plugin-format": "^1.0.1",
     "typescript": "^5.8.2"
+  },
+
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
