@@ -1,9 +1,9 @@
 {
   "publisher": "sebastiandotdev",
-  "name": "pretty-ts-annotations",
-  "displayName": "pretty-ts-annotations",
+  "name": "starter-extension",
+  "displayName": "starter-extension",
   "version": "0.1.0",
-  "description": "A VS Code extension that adds pretty annotations to your TypeScript code.",
+  "description": "starter-extension",
   "author": "sebastiandotdev",
   "license": "MIT",
   "homepage": "https://github.com/sebastiandotdev/pretty-ts-annotations",
@@ -35,7 +35,7 @@
     "commands": [],
     "configuration": {
       "type": "object",
-      "title": "pretty-ts-annotations",
+      "title": "starter-extension",
       "properties": {}
     }
   },
