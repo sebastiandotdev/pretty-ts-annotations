@@ -19,7 +19,7 @@
     "Visualization",
     "Other"
   ],
-  "main": "index.js",
+  "main": "./out/extension",
   "icon": "resources/icon.png",
   "files": [
     "LICENSE.md",
@@ -38,6 +38,9 @@
     }
   },
   "scripts": {
+    "vscode:prepublish": "npm run build -- --minify",
+    "build": "esbuild --bundle --external:vscode src/extension.ts --outdir=out --platform=node --format=cjs",
+    "watch": "npm run build -- --sourcemap --watch",
     "fmt": "eslint . --fix",
     "lint": "eslint .",
     "check": "tsc --noEmit"
@@ -46,6 +49,8 @@
     "@antfu/eslint-config": "^4.8.1",
     "@types/node": "^22.13.9",
     "@types/vscode": "^1.98.0",
+    "@vscode/vsce": "^3.2.2",
+    "esbuild": "^0.25.0",
     "eslint": "^9.22.0",
     "eslint-plugin-format": "^1.0.1",
     "typescript": "^5.8.2"
